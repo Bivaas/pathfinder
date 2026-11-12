@@ -1,22 +1,109 @@
 {
  "name": "After +2",
+ "about": "Pick a generic faculty you like and you'll eventually reach the specialization",
+ "streamLabels": {
+
+    "sci-com": "Science (computer)",
+    "sci-bio": "Science (Biology)",
+    "mgmt": "Management",
+    "hum": "Humanities / Arts"
+ },
+
  "children": [
 
     {
         "name": "Software & IT",
+        "type": "faculty",
+        "about": "Building software, apps, data systems and networks",
+
         "children": [
 
             {
                 "name": "BE Computer Engineering",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["IOE entrance", "KU / PU entrance", "JEE main / Advanced (india)"],
+                "about": "Engineering degree coovering both software and hardware",
+
                 "children": [
 
                     {
                         "name": "Software Engineering",
+                        "type": "specialization",
+
                         "children": [
 
-                            { "name": "Software Developer" },
-                            { "name": "Mobile App developer"}
+                            { "name": "Software Developer", "type": "career" },
+                            { "name": "Backend Developer", "type": "career" },
+                            { "name": "Mobile App developer", "type": "career"}
                         ]
+                    },
+
+                    { "name": "AI & ML", 
+                    "type": "specialization",
+                
+                    "children": [
+
+                        { "name": "ML engineer", "type": "career"},
+                        { "name": "AI engineer", "type": "career" }
+                    ]
+                }, 
+
+                {
+                    "name": "Networking & Cloud",
+                    "type": "specialization",
+
+                    "children": [
+
+                        { "name": "Cloud / DevOps Engineer", "type": "career"},
+                        { "name": "Network Engineer", "type": "career"}
+                    ]         
+                }
+                ]
+            },
+
+            {
+                "name": "BSc SCIT",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["TU IOST entrance"],
+                "about": "Tribhuvan University's computer science and IT degree",
+
+                "children": [
+
+                    { 
+                        "name": "Web Dev",
+                        "type": "specialization",
+
+                    "children": [
+
+                        { "name": "Full-stack Developer", "type": "career" },
+                        { "name": "Frontend Developer", "type": "career"}
+                    ]
+                },
+
+                    {
+                        "name": "Data Science",
+                        "type": "specialization",
+
+                    "children": [
+
+                        { "name": "Data Analyst", "type": "career"},
+                        { "name": "Data Scientist", "type": "career" }
+                    ]
+                },
+
+                    {
+                        "name": "Cybersecurity",
+                        "type": "specialization",
+
+                    "children": [
+
+                        { "name": "Security Analyst", "type": "career" },
+                        { "name": "Penetration Tester", "type": "career" }
+                    ]
                     }
                 ]
             }
