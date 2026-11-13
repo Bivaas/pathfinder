@@ -106,6 +106,128 @@
                     ]
                     }
                 ]
+            },
+
+            {
+                "name": "BCA",
+                "type": "degree",
+                "streams": ["sci-com", "sci-bio", "mgmt", "hum"],
+                "duration": "4 years / 3 years (India)",
+                "exams": ["TU / PU entrance", "CUET or university test (India)" ],
+                "about": "Bachelor of Computer Application",
+
+                "children": [
+
+                    {
+                        "name": "Application Development",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Software Developer", "type": "career"},
+                            { "name": "QA / Test Engineer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "IT Support & Systems", 
+                        "type": "specialization", 
+
+                        "children": [
+
+                            { "name": "System Administrator", "type": "career" },
+                            { "name": "It Support Specialist", "type": "career" } 
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BIT / BIM",
+                "type": "degree",
+                "streams": ["sci-com", "mgmt"],
+                "duration": "4 years",
+                "exams": ["TU / PU entrance"],
+                "about": "Bachelor of Information Technology / Bachelor of Information Management",
+
+                "children": [
+
+                    {
+                        "name": "Business IT", 
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Business Analyst", "type": "career"},
+                            { "name": "ERP Consultant", "type": "career" }
+                        ]
+                    },
+
+                    {
+                        "name": "Product & Design",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "UI/UX Designer", "type": "career" },
+                            { "name": "Product Manager", "type": "career" }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "Hardware & Electronics",
+        "type": "faculty",
+        "about": "circuits, chips, power systems, robots and communication devices",
+
+        "children": [
+
+            {
+                "name": "BE Electronics & Communication",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["IOE entrance", "JEE Main / Advanced (India)"],
+                "about": "Electronic circuits, signals, telecom and embedded devices",
+                
+                "children": [
+
+                    {
+                        "name": "Embedded Systems & IoT",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Embedded Engineer", "type": "career" },
+                            { "name": "IoT Developer", "type": "career" }
+                        ]
+                    }, 
+
+                    {
+                        "name": "VLSI & Chip Design",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "VLSI Design Engineer", "type": "career"},
+                            { "name": "Verification Engineer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Telecommunication",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Telecom Engineer", "type": "career"},
+                            { "name": "RF Engineer", "type": "career"}
+                        ]
+                    }
+                ]
             }
         ]
     }
