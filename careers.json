@@ -64,7 +64,7 @@
             },
 
             {
-                "name": "BSc SCIT",
+                "name": "BSc CSIT",
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
@@ -225,6 +225,194 @@
 
                             { "name": "Telecom Engineer", "type": "career"},
                             { "name": "RF Engineer", "type": "career"}
+                        ]
+                    }
+                ]
+            }, 
+
+            {
+                "name": "BE Electrical",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams":["IOE entrance", "JEE main / Advanced (India)"],
+                "about": "Power generation, transmission, machines and control systems",
+
+                "children": [
+                    {
+                        "name": "Power systems",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Hydropower Engineer", "type": "career"},
+                            { "name": "Grid / Utility Engineer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Renewable energy",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Solar Energy Engineer", "type": "career" },
+                            { "name": "Energy Consultant", "type": "career" }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BE Mechatronics / Robotics",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["KU / private college entrance", "JEE main (india)"],
+                "about": "Mechanical, electronic and software engineering combined",
+
+                "children": [
+                    {
+                        "name": "Robotics & Automation",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Robotics Engineer", "type": "career" },
+                            { "name": "Automation Engineer", "type": "career" }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "Diploma in Electrical / Electronics",
+                "type": "degree",
+                "streams": ["sci-com", "sci-bio", "mgmt", "hum"],
+                "duration": "3 years",
+                "exams": ["CTEVT entrance"],
+                "about": "Practical technician route",
+
+                "children": [
+
+                    {
+                        "name": "Technician",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Electrical technician", "type": "career"},
+                            { "name": "Electronics repair specialist", "type": "career"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "Core Engineering",
+        "type": "faculty",
+        "about": "Buildings, roads, machines and other infrastructures",
+
+        "children": [
+
+            {
+                "name": "BE Civil",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["IOE entrance", "JEE main / advanced (India)"],
+                "aboot": "Design and construction of buildings, roads, bridges and water systems",
+
+                "children": [
+                    {
+                        "name": "Structural", 
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Structural Engineer", "type": "career"},
+                            { "name": "Site Engineer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Transportation",
+                        "type": "specialization",   
+                        
+                        "children": [
+
+                            { "name": "Highway Engineer", "type": "career"},
+                            { "name": "Urban Planner", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Water Resources",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Hydraulic Engineer", "type": "career" },
+                            { "name": "Irrigation Engineer", "type": "career" }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BE Mechanical",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["IOE entrance", "JEE Main / Advanced (India)"],
+                "about": "Machines, engines, manufacturing and thermal systems",
+
+                "children": [
+
+                    {
+                        "name": "Automobile",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Automobile Engineer", "type": "career"},
+                            { "name": "EV Engineer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Manufacturing",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Production Engineer", "type": "career"},
+                            { "name": "Quality Engineer", "type": "career"}
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "B.Arch",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "5 years",
+                "exams": ["IOE entrance", "NATA / JEE main paper 2 (india)"],
+                "about": "designing building and spaces",
+
+                "children": [
+
+                    {
+                        "name": "Architectural Design", 
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Architect", "type": "career"},
+                            { "name": "Interior Designer", "type":"career"}
                         ]
                     }
                 ]

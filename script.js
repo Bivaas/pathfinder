@@ -6,7 +6,7 @@ function buildList(node) {
     if (node.children) {
 
         const ul = document.createElement("ul");
-        node.children.ForEach(child => {
+        node.children.forEach(child => {
 
             ul.appendChild(buildList(child));
         });
@@ -25,4 +25,5 @@ fetch("careers.json")
         const ul = document.createElement("ul");
         ul.appendChild(buildList(data));
         document.getElementById("tree").appendChild(ul);
-    });
+    })
+    .catch(err => console.error("Failed to load careers.json:", err));
