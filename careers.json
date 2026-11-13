@@ -418,6 +418,85 @@
                 ]
             }
         ]
+    },
+
+    {
+        "name": "Medical & Health",
+        "type": "faculty",
+        "about": "Treating patients, medicines and public health",
+
+        "children": [
+
+            {
+                "name": "MBBS",
+                "type": "degree",
+                "streams": ["sci-bio"],
+                "duration": "5.5 years including internship",
+                "exams": ["MEC entrance", "NEET-UG (india)"],
+                "about": "Bachelor of medicine and Surgery",
+
+                "children": [
+
+                    {
+                        "name": "MD",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Physician", "type": "career"},
+                            { "name": "Paediatrician", "type": "career"},
+                            { "name": "Psychiatrist", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "MS",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "General Surgeon", "type": "career" },
+                            { "name": "Orthopaedic Surgeon", "type": "career" },
+                            { "name": "Gynaecologist", "type": "career" }
+                        ]
+                    },
+
+                    {
+                        "name": "Direct after MBBS",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Medical Officer", "type": "career" },
+                            { "name": "Medical Researcher", "type": "career"}
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BDS",
+                "type": "degree",
+                "streams": ["sci-bio"],
+                "duration": "4 years",
+                "exams": ["MEC entrance", "NEET-UG (india)"],
+                "about": "Bachelor of Dental Surgery",
+
+                "children": [
+
+                    {
+                        "name": "Dentistry",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Dentist", "type": "career"},
+                            {"name": "Orthodontist", "type": "career"}
+                        ]
+                    }
+                ]
+            }
+        ]
     }
  ]
 }
