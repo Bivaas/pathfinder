@@ -495,6 +495,136 @@
                         ]
                     }
                 ]
+            },
+
+            {
+                "name": "BSc Nursing",
+                "type": "degree",
+                "streams": ["sci-bio"],
+                "duration": "4 years",
+                "exams": ["MEC entrance", "NEET-UG (India)"],
+                "about": "Professional nursing degree",
+
+                "children": [
+                    {
+                        "name": "Clinical Nursing",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Staff Nurse", "type": "career"},
+                            { "name": "ICU Nurse", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Community Health",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Public Health Nurse"}
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "B.Pharm",
+                "type": "degree",
+                "streams": ["sci-bio", "sci-com"],
+                "duration": "4 years",
+                "exams": ["MEC entrance", "State CET / university test (India)"],
+                "about": "making, testing and dispensing medicines",
+
+                "children": [
+                    {
+                        "name": "Pharmacy practice",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Hospital Pharmacist", "type": "career"},
+                            { "name": "Drug Inspector", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Pharma Industry",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Quality Control Analyst", "type": "career" },
+                            { "name": "Medical Representative", "type": "career" }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "Allied Health (BMLT, BPH, BPT, B.Optom)",
+                "type": "degree",
+                "streams": ["sci-bio"],
+                "duration": "4 years",
+                "exams": ["MEC entrance", "University tests (india)"],
+                "about": "Lab technology, public health, physiotherapy and optometry",
+                
+                "children": [
+                    {
+                        "name": "Lab & Diagnostics",
+                        "type": "specialization", 
+
+                        "children": [
+
+                            { "name": "Medical Lab Technologist", "type": "career"},
+                            { "name": "Radiographer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Public health",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Public Health Officer", "type": "career"},
+                            {"name": "NGO / INGO Health Program Officer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Therapy & Vision",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Physiotherapist", "type": "career" },
+                            { "name": "Optometrist", "type": "career" }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BAMS {Ayurveda)",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "5.5 years",
+                "exams": ["MEC entrance", "NEET-UG (India)"],
+                "about": "Ayurvedic medicine and surgery",
+
+                "children": [
+                    {
+                        "name": "Ayurveda Practice",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Ayurvedic Doctor", "type": "career"}
+                        ]
+                    }
+                ]
             }
         ]
     }
