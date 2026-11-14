@@ -607,7 +607,7 @@
             },
 
             {
-                "name": "BAMS {Ayurveda)",
+                "name": "BAMS (Ayurveda)",
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "5.5 years",
@@ -622,6 +622,133 @@
                         "children": [
 
                             {"name": "Ayurvedic Doctor", "type": "career"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "Pure & Applied Sciences",
+        "type": "faculty",
+        "about": "Research, labs, farms, forest and environment",
+
+        "children": [
+            {
+                "name": "BSc (Physics, Chemistry, Maths)",
+                "type": "degree",
+                "streams": ["sci-com"],
+                "duration": "4 years",
+                "exams": ["TU / KU entrance", "CUET / IISER aptitude test (India)"],
+                "about": "core science degree",
+
+                "children": [
+                    {
+                        "name": "Research",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Scientist", "type": "career" },
+                            { "name": "Lab Researcher", "type": "career" }
+                        ]
+                    },
+
+                    {
+                        "name": "Teaching",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "School / College teacher", "type": "career" }
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BSc Microbiology / Biotechnology",
+                "type": "degree",
+                "streams": ["sci-bio"],
+                "duration": "4 years",
+                "exams": ["TU / KU entrance", "CUET (India)"],
+                "about": "Microbes, genes and living systems used in medicine, food and inductry",
+
+                "children": [
+                    {
+                        "name": "Biotech industry",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Biotech Research Associate", "type": "career"},
+                            {"name": "Food quality analyst", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Clinical Microbiology",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Microbiologist", "type": "career"}
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BSc Agriculture / Forestry",
+                "type": "degree",
+                "streams": ["sci-bio", "sci-com"],
+                "duration": "4 years",
+                "exams": ["AFU / IAAS entrance", "ICAR AIEEA / CUET (India)"],
+                "about": "crops, soil, livestock, forests and rural development",
+
+                "children": [
+                    {
+                        "name": "Agronomy & Horticulture",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Agriculture Officer", "type": "career"},
+                            { "name": "Agri-entrepreneur", "type": "career" }
+                        ]
+                    },
+                    {
+                        "name": "Forestry",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Forest Officer", "type": "career" },
+                            { "name": "Conservation Officer", "type": "career" }
+                        ]
+                    }
+                ]
+
+            },
+
+            {
+                "name": "BVSc & AH (vet)",
+                "type": "degree",
+                "streams": ["sci-bio"],
+                "duration": "5.5 years",
+                "exams": ["AFU / IAAS entrance", "NEET-UG (India)"],
+                "about": "Animal health and animal husbandry",
+
+                "children": [
+                    {
+                        "name": "Veterinary Medicine",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Veterinary Doctor", "type": "career"},
+                            { "name": "Livestock Officer", "type": "career"}
                         ]
                     }
                 ]
