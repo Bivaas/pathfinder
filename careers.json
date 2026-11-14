@@ -752,6 +752,124 @@
                         ]
                     }
                 ]
+            },
+
+            {
+                "name": "BSc Environmental Science",
+                "type": "degree",
+                "streams": ["sci-bio", "sci-math"],
+                "duration": "4 years",
+                "exams": ["TU / KU entrance", "CUET (india)"],
+                "about": "climate, pollution, ecology and environment management",
+
+                "children": [
+                    {
+                        "name": "Environment management",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Environmental Officer", "type": "career"},
+                            {"name": "Climate Change Analyst", "type": "career"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "Management & Commerce",
+        "type": "faculty",
+        "about": "Business, Money, Markets, running Organizations",
+
+        "children": [
+
+            {
+                "name": "BBA",
+                "type": "degree",
+                "streams": ["sci-com", "sci-bio", "mgmt", "hum"],
+                "duration": "4 years",
+                "exams": ["TU CMAT / KUUMAT", "IPMAT / CUET"],
+                "about": "Bachelor of Business Administration",
+
+                "children": [
+                    {
+                        "name": "Finance",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Financial Analyst", "type": "career" },
+                            { "name": "Investment Banker", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Marketing", 
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Marketing Manager", "type": "career"},
+                            { "name": "Digital Marketer", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Human Resources",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "HR Manager", "type": "career" },
+                            { "name": "Recruiter", "type": "career" }
+                        ]
+                    },
+
+                    {
+                        "name": "Entrepreneurship",
+                        "type": "specialization",
+
+                        "children": [
+                            { "name": "Startup Founder", "type": "career"},
+                            { "name": "Business Consultant", "type": "career"}
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BBS",
+                "type": "degree",
+                "streams": ["mgmt", "sci-com", "sci-bio", "hum"],
+                "duration": "4 years",
+                "exams": "TU / Pu",
+                "about": "Bachelor of Business Studies",
+
+                "children": [
+                    {
+                        "name": "Banking",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Bank Officer", "type": "career" },
+                            { "name": "Credit Analyst", "type": "career"}
+                        ]
+                    },
+
+                    {
+                        "name": "Accounting & Tax", 
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Accountant", "type": "career" },
+                            { "name": "Tax Consultant", "type": "career" }
+                        ]
+                    }
+                ]
             }
         ]
     }
