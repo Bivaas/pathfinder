@@ -870,6 +870,161 @@
                         ]
                     }
                 ]
+            },
+
+            {
+                "name": "Chartered Accountancy (CA)",
+                "type": "degree",
+                "streams": ["mgmt", "sci-com", "sci-bio", "hum"],
+                "duration": "4-5 years",
+                "exams": ["ICAN CAP-I", "ICAI CA Foundation (India)"],
+                "about": "professional accounting qualification",
+
+                "children": [
+
+                    {
+                        "name": "Audit & Assurance",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Chartered Accountant", "type": "career"},
+                            {"name": "Auditor", "type": "career"}
+                        ]
+                    },
+                    {
+                        "name": "Corporate Finance",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "CFO / Finance Head", "type": "career"}
+                        ]
+                    }
+                ]
+            },
+
+            {
+                "name": "BHM / BBTM",
+                "type": "degree",
+                "streams": ["mgmt", "sci-com", "sci-bio", "hum"],
+                "duration": "4 years",
+                "exams": ["TU / PU entrance", "NCHM JEE"],
+                "about": "Hotel management and travel and travel & tourism management",
+
+                "children": [
+                    {
+                        "name": "Hospitality",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Hotel Manager", "type": "career"},
+                            {"name": "Chef", "type": "career"}
+                        ]
+                    },
+                    {
+                        "name": "Tourism",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Travel Agency Manager", "type": "career"},
+                            {"name": "Airline Staff / Cabin Crew", "type": "career"}
+                        ]
+                    }
+                ]
+                
+            }
+        ]
+    }, 
+
+    {
+        "name": "Law", 
+        "type": "faculty",
+        "about": "courts, contracts, rights and justice",
+
+        "children": [
+            {
+                "name": "BA LLB / BBA LLB",
+                "type": "degree",
+                "streams": ["sci-bio", "sci-com", "mgmt", "hum"],
+                "duration": "5 years",
+                "exams": ["TU / KU law entrance", "CLAT / AILET (India)"],
+                "about": "five-year law degree",
+
+                "children": [
+
+                    {
+                        "name": "Litigation",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Advocate", "type": "career"},
+                            { "name": "Judge", "type": "career"}
+                        ]
+                    },
+                    {
+                        "name": "Corporate Law",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Corporate Lawyer", "type": "career"},
+                            { "name": "Legal Advisor", "type": "career"}
+                        ]
+                    },
+                    {
+                        "name": "Human Rights & Policy",
+                        "type": "specialization",
+
+                        "children": [
+
+                            {"name": "Human Rights Lawyer", "type": "career"},
+                            {"name": "Policy Researcher", "type": "career"}
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+    {
+        "name": "Humanities & Social Sciences",
+        "type": "faculty",
+        "about": "people, society, language, media and government",
+
+        "children": [
+            {
+                "name": "BA Economics / Political Science",
+                "type": "degree",
+                "streams": ["hum", "mgmt", "sci-com", "sci-bio"],
+                "duration": "4 years",
+                "exams": "Merit-based",
+                "about": "How economies and government work",
+
+                "children": [
+                    {
+                        "name": "Public Service",
+                        "type": "specialization",
+
+                        "children": [
+                            {"name": "Civil Servant (loksewa / UPSC)", "type": "career"},
+                            {"name": "Doplomat", "type": "career"}
+                        ]
+                    },
+                    {
+                        "name": "Economics & Policy",
+                        "type": "specialization",
+
+                        "children": [
+
+                            { "name": "Economist", "type": "career"},
+                            { "name": "Development Professional", "type": "career"}
+                        ]
+                    }
+                ]
             }
         ]
     }
