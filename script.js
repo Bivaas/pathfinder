@@ -1,17 +1,31 @@
 function buildList(node) {
 
     const li = document.createElement("li");
-    li.textContent = node.name;
+    
+    const label = document.createElement("span");
+    label.textContent = node.name;
+    li.appendChild(label);
 
     if (node.children) {
 
         const ul = document.createElement("ul");
+        ul.hidden = true;
         node.children.forEach(child => {
 
             ul.appendChild(buildList(child));
         });
 
         li.appendChild(ul);
+
+        label.addEventListener("click", () => {
+
+            ul.hidden = !ul.hidden;
+
+            document.querySelectorAll(".active").forEach (el => 
+                el.classList.remove("active"))
+            
+                li.classList.add("active");
+        })
     }
 
     return li;
