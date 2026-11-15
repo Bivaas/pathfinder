@@ -1,10 +1,43 @@
+let streamLabels = {};
+
+
+// all details (click)
+function showDetails(node) {
+
+    const details = document.getElementById("details");
+
+    details.innerHTML = "<h2>" + node.name + "</h2><p>" + (node.about || "") + "</p>";
+
+
+    if (node.duration) {
+
+        details.innerHTML += "<p>Duration: " + node.duration + "</p>";
+    }
+
+    if (node.exams) {
+
+        details.innerHTML +- "<p>Entrance exams " + node.exams.join(", ") + "</p>"; 
+    }
+
+    if (node.streams) {
+
+        const names = node.streams.map(code => streamLabels[code]);
+
+        details.innerHTML += "<p>Open to: " + names.join(", ") + "</p>";
+    }
+}
+
+
 function buildList(node) {
 
     const li = document.createElement("li");
     
     const label = document.createElement("span");
     label.textContent = node.name;
+
+    // show details
     li.appendChild(label);
+    label.addEventListener("click", () => showDetails(node));
 
     if (node.children) {
 
@@ -34,7 +67,10 @@ function buildList(node) {
 fetch("careers.json")
 
     .then(response => response.json())
+
     .then(data => {
+
+        streamLabels = data.streamLabels;
 
         const ul = document.createElement("ul");
         ul.appendChild(buildList(data));
