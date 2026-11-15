@@ -1,4 +1,5 @@
 let streamLabels = {};
+let allNodes = [];
 
 
 // all details (click)
@@ -31,12 +32,21 @@ function showDetails(node) {
 function buildList(node) {
 
     const li = document.createElement("li");
+
+    allNodes.push(node);
     
     const label = document.createElement("span");
     label.textContent = node.name;
 
     // show details
     li.appendChild(label);
+
+    // degree with their streams
+    if (node.streams) {
+
+        li.dataset.streams = node.streams.join(" ");
+    }
+
     label.addEventListener("click", () => showDetails(node));
 
     if (node.children) {
@@ -72,8 +82,49 @@ fetch("careers.json")
 
         streamLabels = data.streamLabels;
 
+        // dropdown data
+        for (const code in streamLabels) {
+
+            document.getElementById("stream").innerHTML += "<option value='" + code + "'>" + streamLabels[code] + "</option>";
+        }
+
         const ul = document.createElement("ul");
         ul.appendChild(buildList(data));
         document.getElementById("tree").appendChild(ul);
     })
-    .catch(err => console.error("Failed to load careers.json:", err));
+
+    // degree and stream changes
+    document.getElementById("stream").addEventListener("change", event => {
+
+        const chosen = event.target.value;
+
+        document.querySelectorAll("[data-streams").forEach(li => {
+
+            li.hidden = chosen !== "all" && !li.dataset.streams.includes(chosen);
+        });
+    })
+
+    // student types
+    document.getElementById("search").addEventListener("input", event => {
+
+        const text = event.target.value.toLowerCase();
+
+        const results = document.getElementById("results");
+
+        results.innerHTML = "";
+
+
+        if (text.length < 2) return;
+
+        allNodes.filter(node => node.name.toLowerCase().includes(text)).forEach(node => {
+
+            const li = document.createElement("li");
+             li.textContent = node.name;
+
+            li.addEventListener("click", () => showDetails(node));
+
+            results.appendChild(li);
+        })
+    })
+
+    .catch(err => console.error("failed to load careers.json:", err));
