@@ -1,6 +1,8 @@
 #tree li {
 
     color: #6d7581;
+    text-align: center;
+    padding: 20px 6px 0;
 }
 
 
@@ -40,8 +42,24 @@ main {
     padding: 6px 10px;
 }
 
-/* bullet dots rm */
+/* bullet dots rm & row */
 #tree ul {
 
     list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* closed branch */
+#tree ul[hidden] {
+
+    display: none
+}
+
+/* open branch */
+#tree ul:has(> li.open) > li:not(.open) {
+
+    display: none;
 }

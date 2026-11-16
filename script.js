@@ -63,6 +63,7 @@ function buildList(node) {
         label.addEventListener("click", () => {
 
             ul.hidden = !ul.hidden;
+            li.classList.toggle("open");
 
             document.querySelectorAll(".active").forEach (el => 
                 el.classList.remove("active"))
