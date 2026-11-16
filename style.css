@@ -8,3 +8,40 @@
 
     color: #3e8d3c;
 }
+
+
+main {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#tree {
+
+    flex: 1;
+}
+
+#details {
+
+    width: 320px;
+} 
+
+#tree span, #results li {
+
+    cursor: pointer;
+}
+
+/* box */
+#tree span {
+
+    display: inline-block;
+    border: 1px solid;
+    padding: 6px 10px;
+}
+
+/* bullet dots rm */
+#tree ul {
+
+    list-style: none;
+}

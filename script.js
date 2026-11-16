@@ -17,7 +17,7 @@ function showDetails(node) {
 
     if (node.exams) {
 
-        details.innerHTML +- "<p>Entrance exams " + node.exams.join(", ") + "</p>"; 
+        details.innerHTML += "<p>Entrance exams: " + node.exams.join(", ") + "</p>"; 
     }
 
     if (node.streams) {
@@ -93,12 +93,14 @@ fetch("careers.json")
         document.getElementById("tree").appendChild(ul);
     })
 
+    .catch(err => console.error("failed to load careers.json", err))
+
     // degree and stream changes
     document.getElementById("stream").addEventListener("change", event => {
 
         const chosen = event.target.value;
 
-        document.querySelectorAll("[data-streams").forEach(li => {
+        document.querySelectorAll("[data-streams]").forEach(li => {
 
             li.hidden = chosen !== "all" && !li.dataset.streams.includes(chosen);
         });
@@ -126,5 +128,3 @@ fetch("careers.json")
             results.appendChild(li);
         })
     })
-
-    .catch(err => console.error("failed to load careers.json:", err));
