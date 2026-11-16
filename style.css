@@ -63,3 +63,21 @@ main {
 
     display: none;
 }
+
+#tree ul ul {
+
+    position: relative;
+    padding-top: 9px;
+}
+
+/* line */
+#tree ul ul::before {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 20px;
+    border-left: 1px solid;
+
+}

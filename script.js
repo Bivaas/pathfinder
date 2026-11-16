@@ -68,7 +68,20 @@ function buildList(node) {
             document.querySelectorAll(".active").forEach (el => 
                 el.classList.remove("active"))
             
-                li.classList.add("active");
+                // when branch is open or closed
+                if (ul.hidden) {
+
+                    ul.querySelectorAll(".open").forEach(el => el.classList.remove("open"));
+                    
+                    ul.querySelectorAll("ul").forEach(el => el.hidden = true);
+
+                    li.parentElement.parentElement.classList.add("active");
+                }
+
+                else {
+
+                    li.classList.add("active");
+                }
         })
     }
 
