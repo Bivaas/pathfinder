@@ -12,7 +12,7 @@
  "children": [
 
     {
-        "name": "Software & IT",
+        "name": "Software",
         "type": "faculty",
         "about": "Building software, apps, data systems and networks",
 
@@ -23,7 +23,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams": ["IOE entrance", "KU / PU entrance", "JEE main / Advanced (india)"],
+                "exams": ["IOE entrance", "KU / PU entrance"],
                 "about": "Engineering degree coovering both software and hardware",
 
                 "children": [
@@ -112,8 +112,8 @@
                 "name": "BCA",
                 "type": "degree",
                 "streams": ["sci-com", "sci-bio", "mgmt", "hum"],
-                "duration": "4 years / 3 years (India)",
-                "exams": ["TU / PU entrance", "CUET or university test (India)" ],
+                "duration": "4 years",
+                "exams": ["TU / PU entrance"],
                 "about": "Bachelor of Computer Application",
 
                 "children": [
@@ -179,7 +179,7 @@
     },
 
     {
-        "name": "Hardware & Electronics",
+        "name": "Hardware",
         "type": "faculty",
         "about": "circuits, chips, power systems, robots and communication devices",
 
@@ -190,7 +190,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams": ["IOE entrance", "JEE Main / Advanced (India)"],
+                "exams": ["IOE entrance"],
                 "about": "Electronic circuits, signals, telecom and embedded devices",
                 
                 "children": [
@@ -235,7 +235,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams":["IOE entrance", "JEE main / Advanced (India)"],
+                "exams":["IOE entrance"],
                 "about": "Power generation, transmission, machines and control systems",
 
                 "children": [
@@ -268,7 +268,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams": ["KU / private college entrance", "JEE main (india)"],
+                "exams": ["KU / private college entrance"],
                 "about": "Mechanical, electronic and software engineering combined",
 
                 "children": [
@@ -311,7 +311,7 @@
     },
 
     {
-        "name": "Core Engineering",
+        "name": "Engineering",
         "type": "faculty",
         "about": "Buildings, roads, machines and other infrastructures",
 
@@ -322,8 +322,8 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams": ["IOE entrance", "JEE main / advanced (India)"],
-                "aboot": "Design and construction of buildings, roads, bridges and water systems",
+                "exams": ["IOE entrance"],
+                "about": "Design and construction of buildings, roads, bridges and water systems",
 
                 "children": [
                     {
@@ -366,7 +366,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams": ["IOE entrance", "JEE Main / Advanced (India)"],
+                "exams": ["IOE entrance"],
                 "about": "Machines, engines, manufacturing and thermal systems",
 
                 "children": [
@@ -400,7 +400,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "5 years",
-                "exams": ["IOE entrance", "NATA / JEE main paper 2 (india)"],
+                "exams": ["IOE entrance"],
                 "about": "designing building and spaces",
 
                 "children": [
@@ -421,7 +421,7 @@
     },
 
     {
-        "name": "Medical & Health",
+        "name": "Medical",
         "type": "faculty",
         "about": "Treating patients, medicines and public health",
 
@@ -432,7 +432,7 @@
                 "type": "degree",
                 "streams": ["sci-bio"],
                 "duration": "5.5 years including internship",
-                "exams": ["MEC entrance", "NEET-UG (india)"],
+                "exams": ["MEC entrance"],
                 "about": "Bachelor of medicine and Surgery",
 
                 "children": [
@@ -479,7 +479,7 @@
                 "type": "degree",
                 "streams": ["sci-bio"],
                 "duration": "4 years",
-                "exams": ["MEC entrance", "NEET-UG (india)"],
+                "exams": ["MEC entrance"],
                 "about": "Bachelor of Dental Surgery",
 
                 "children": [
@@ -502,7 +502,7 @@
                 "type": "degree",
                 "streams": ["sci-bio"],
                 "duration": "4 years",
-                "exams": ["MEC entrance", "NEET-UG (India)"],
+                "exams": ["MEC entrance"],
                 "about": "Professional nursing degree",
 
                 "children": [
@@ -534,7 +534,7 @@
                 "type": "degree",
                 "streams": ["sci-bio", "sci-com"],
                 "duration": "4 years",
-                "exams": ["MEC entrance", "State CET / university test (India)"],
+                "exams": ["MEC entrance"],
                 "about": "making, testing and dispensing medicines",
 
                 "children": [
@@ -567,7 +567,7 @@
                 "type": "degree",
                 "streams": ["sci-bio"],
                 "duration": "4 years",
-                "exams": ["MEC entrance", "University tests (india)"],
+                "exams": ["MEC entrance"],
                 "about": "Lab technology, public health, physiotherapy and optometry",
                 
                 "children": [
@@ -611,7 +611,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "5.5 years",
-                "exams": ["MEC entrance", "NEET-UG (India)"],
+                "exams": ["MEC entrance"],
                 "about": "Ayurvedic medicine and surgery",
 
                 "children": [
@@ -630,7 +630,7 @@
     },
 
     {
-        "name": "Pure & Applied Sciences",
+        "name": "Sciences",
         "type": "faculty",
         "about": "Research, labs, farms, forest and environment",
 
@@ -640,7 +640,7 @@
                 "type": "degree",
                 "streams": ["sci-com"],
                 "duration": "4 years",
-                "exams": ["TU / KU entrance", "CUET / IISER aptitude test (India)"],
+                "exams": ["TU / KU entrance"],
                 "about": "core science degree",
 
                 "children": [
@@ -672,7 +672,7 @@
                 "type": "degree",
                 "streams": ["sci-bio"],
                 "duration": "4 years",
-                "exams": ["TU / KU entrance", "CUET (India)"],
+                "exams": ["TU / KU entrance"],
                 "about": "Microbes, genes and living systems used in medicine, food and inductry",
 
                 "children": [
@@ -704,7 +704,7 @@
                 "type": "degree",
                 "streams": ["sci-bio", "sci-com"],
                 "duration": "4 years",
-                "exams": ["AFU / IAAS entrance", "ICAR AIEEA / CUET (India)"],
+                "exams": ["AFU / IAAS entrance"],
                 "about": "crops, soil, livestock, forests and rural development",
 
                 "children": [
@@ -737,7 +737,7 @@
                 "type": "degree",
                 "streams": ["sci-bio"],
                 "duration": "5.5 years",
-                "exams": ["AFU / IAAS entrance", "NEET-UG (India)"],
+                "exams": ["AFU / IAAS entrance"],
                 "about": "Animal health and animal husbandry",
 
                 "children": [
@@ -759,7 +759,7 @@
                 "type": "degree",
                 "streams": ["sci-bio", "sci-math"],
                 "duration": "4 years",
-                "exams": ["TU / KU entrance", "CUET (india)"],
+                "exams": ["TU / KU entrance"],
                 "about": "climate, pollution, ecology and environment management",
 
                 "children": [
@@ -779,7 +779,7 @@
     },
 
     {
-        "name": "Management & Commerce",
+        "name": "Business",
         "type": "faculty",
         "about": "Business, Money, Markets, running Organizations",
 
@@ -790,7 +790,7 @@
                 "type": "degree",
                 "streams": ["sci-com", "sci-bio", "mgmt", "hum"],
                 "duration": "4 years",
-                "exams": ["TU CMAT / KUUMAT", "IPMAT / CUET"],
+                "exams": ["TU CMAT / KUUMAT", "IPMAT"],
                 "about": "Bachelor of Business Administration",
 
                 "children": [
@@ -877,7 +877,7 @@
                 "type": "degree",
                 "streams": ["mgmt", "sci-com", "sci-bio", "hum"],
                 "duration": "4-5 years",
-                "exams": ["ICAN CAP-I", "ICAI CA Foundation (India)"],
+                "exams": ["ICAN CAP-I"],
                 "about": "professional accounting qualification",
 
                 "children": [
@@ -909,7 +909,7 @@
                 "type": "degree",
                 "streams": ["mgmt", "sci-com", "sci-bio", "hum"],
                 "duration": "4 years",
-                "exams": ["TU / PU entrance", "NCHM JEE"],
+                "exams": ["TU / PU entrance"],
                 "about": "Hotel management and travel and travel & tourism management",
 
                 "children": [
@@ -950,7 +950,7 @@
                 "type": "degree",
                 "streams": ["sci-bio", "sci-com", "mgmt", "hum"],
                 "duration": "5 years",
-                "exams": ["TU / KU law entrance", "CLAT / AILET (India)"],
+                "exams": ["TU / KU law entrance"],
                 "about": "five-year law degree",
 
                 "children": [
@@ -991,7 +991,7 @@
     },
 
     {
-        "name": "Humanities & Social Sciences",
+        "name": "Humanities",
         "type": "faculty",
         "about": "people, society, language, media and government",
 
@@ -1001,7 +1001,7 @@
                 "type": "degree",
                 "streams": ["hum", "mgmt", "sci-com", "sci-bio"],
                 "duration": "4 years",
-                "exams": "Merit-based",
+                "exams": ["Merit-based"],
                 "about": "How economies and government work",
 
                 "children": [
@@ -1010,7 +1010,7 @@
                         "type": "specialization",
 
                         "children": [
-                            {"name": "Civil Servant (loksewa / UPSC)", "type": "career"},
+                            {"name": "Civil Servant (loksewa)", "type": "career"},
                             {"name": "Doplomat", "type": "career"}
                         ]
                     },
