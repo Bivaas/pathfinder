@@ -25,6 +25,19 @@
  }
  ];
 
+ // answer points
+let scores = {
+
+    Software: 0, 
+    Hardware: 0,
+    Engineering: 0,
+    Medical: 0,
+    Science: 0,
+    Business: 0,
+    Law: 0,
+    Humanities: 0
+}
+
 
 //  one question and answer
  function showQuestion(index) {
@@ -43,7 +56,13 @@
 
             if (index + 1 < questions.length) {
 
+                scores[option.field] = scores[option.field] + 1;
+
                 showQuestion(index + 1);
+
+            } else {
+
+                showResult();
             }
         });
 
@@ -51,4 +70,21 @@
     })
  }
 
- showQuestion(0);
+// answers to fields
+function showResult() {
+
+    let best = "Software";
+
+    for (const field in scores) {
+
+        if (scores[field] > scores[best]) {
+
+            best = field;
+        }
+    }
+
+    document.getElementById("quiz").innerHTML = "<p>Your best career match is: " + best + "</p>";
+} 
+
+
+showQuestion(0);
