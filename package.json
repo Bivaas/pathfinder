@@ -1,0 +1,23 @@
+{
+  "name": "pathfinder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quiz.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bivaas/pathfinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bivaas/pathfinder/issues"
+  },
+  "homepage": "https://github.com/Bivaas/pathfinder#readme",
+  "dependencies": {
+    "express": "^5.3.0"
+  }
+}

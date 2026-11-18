@@ -150,4 +150,15 @@ main {
         padding: 8px 12px;
     }
 
+    #quizlink {
+
+        display: inline-block;
+        margin-top: 24px;
+        padding: 10px 16px;
+        border: 1px solid;
+        border-radius: 6px;
+        color: #56ce54;
+        text-decoration: none;
+    }
+
 }
