@@ -38,6 +38,16 @@ function buildList(node) {
     const label = document.createElement("span");
     label.textContent = node.name;
 
+
+    // field picture
+    if (node.type === "faculty") {
+
+        const img = document.createElement("img");
+        img.src = "images/" + node.name + ".png";
+        label.prepend(img);
+    }
+
+
     // show details
     li.appendChild(label);
 

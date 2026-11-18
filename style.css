@@ -42,6 +42,22 @@ main {
     display: inline-block;
     border: 1px solid;
     padding: 6px 10px;
+
+    border-radius: 6px;
+}
+
+/* open path */
+#tree li.open > span {
+
+    background: white;
+}
+
+/* pic */
+#tree span img {
+
+    display: block;
+    height: 32px;
+    margin: 0 auto 4px;
 }
 
 /* bullet dots rm & row */
