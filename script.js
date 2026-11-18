@@ -114,7 +114,24 @@ fetch("careers.json")
 
         const ul = document.createElement("ul");
         ul.appendChild(buildList(data));
+
         document.getElementById("tree").appendChild(ul);
+
+        // open address field
+        const field = new URLSearchParams(location.search).get("field");
+
+        if (field) {
+
+            document.querySelector("#tree span").click();
+
+            document.querySelectorAll("#tree span").forEach(span => {
+
+                if (span.textContent === field) {
+
+                    span.click();
+                }
+            })
+        }
     })
 
     .catch(err => console.error("failed to load careers.json", err))

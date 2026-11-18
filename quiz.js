@@ -85,23 +85,7 @@ function showResult() {
 
     document.getElementById("quiz").innerHTML = "<p>Your best career match is: " + best + "</p>";
 
-    // first branch
-    const root = document.querySelector("#tree li");
-
-    if (root.querySelector("ul").hidden) {
-
-        root.querySelector("span").click();
-    }
-
-    // matched field open
-    root.querySelectorAll("span").forEach(span => {
-
-        if (span.textContent === best) {
-
-            span.click();
-        }
-    })
-} 
-
+    document.getElementById("quiz").innerHTML += "<a href='index.html?field=" + best + "'>See " + best + " in the career map</a>";
+}
 
 showQuestion(0);
