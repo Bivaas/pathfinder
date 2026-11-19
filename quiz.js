@@ -1,3 +1,4 @@
+//  quiz questions
  const questions = [
 
     {
@@ -22,7 +23,31 @@
         { text: "Account", field: "Business" }
 
     ]
- }
+ },
+
+ {
+    text: "How do you spend time in a free day?",
+
+    options: [
+
+        { text: "Doing experiments or watching nature shows", field: "Science" },
+        { text: "Debating and making counter arguments", field: "Law" },
+        { text: "Reading, writing or drawing", field: "Humanities" },
+        { text: "Building and fixing things", field: "Engineering" }
+    ]
+ },
+
+{
+    text: "Which job sounds cool ?",
+    options: [
+
+        { text: "Researcher in a lab", field: "Science" },
+        { text: "Lawyer in a court", field: "Law" },
+        { text: "Journalist or teacher", field: "Humanities" },
+        { text: "Designing electronic circuits", field: "Hardware" } 
+    ]
+}
+
  ];
 
  // answer points
@@ -62,13 +87,33 @@ let scores = {
 
             } else {
 
-                showResult();
+                showAbout();
             }
         });
 
         quiz.appendChild(button);
     })
  }
+
+
+//  about me box
+function showAbout() {
+
+    const quiz = document.getElementById("quiz");
+    quiz.innerHTML = "<<p>Describe yourself (hobbies, academics, dream job) </p>";
+
+    const box = document.createElement("textarea");
+    box.id = "about";
+    box.rows = 4;
+    box.cols = 40;
+    quiz.appendChild(box);
+
+    const button = document.createElement("button");
+    button.textContent = "See my result";
+    button.addEventListener("click", showResult);
+    quiz.appendChild(button);
+}
+
 
 // answers to fields
 function showResult() {

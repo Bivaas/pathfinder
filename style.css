@@ -58,6 +58,12 @@ main {
     margin-bottom: 24px;
 }
 
+/* about box */
+#about {
+
+    display: block;
+}
+
 
 #tree {
 
