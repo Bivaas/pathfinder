@@ -17,7 +17,17 @@ document.getElementById("asl").addEventListener("click", () => {
     .then(response => response.json())
     .then( data => {
 
-        answer.textContent = data.answer;
+        if (data.error) {
+
+            answer.textContent = "";
+
+            Toastify({ text: data.error, style: { background: "#b00020" }}).showToast();
+        
+        }
+        else {
+
+            answer.textContent = data.answer;
+        }
     })
 
     // enter key for send
@@ -27,5 +37,12 @@ document.getElementById("asl").addEventListener("click", () => {
 
             document.getElementById("ask").click();
         }
+    })
+
+    .catch(() => {
+
+        answer.textContent = "";
+
+        Toastify ({ text: "Something went wrong..", style: {background: "#b00020"} }).showToast();
     })
 })
