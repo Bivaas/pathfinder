@@ -1,3 +1,8 @@
+body {
+
+    margin: 20px;
+}
+
 #tree li {
 
     color: #6d7581;
@@ -125,7 +130,7 @@ main {
 }
 
 /* line stop */
-#tree ul ul > li:first-child::before, #tree ul ul > li.last-child::after,
+#tree ul ul > li:first-child::before, #tree ul ul > li:last-child::after,
 #tree ul ul > li.open::before, #tree ul ul > li.open::after {
 
     border-top: 0;
@@ -143,6 +148,7 @@ main {
 
         border-top: 0;
     }
+}
 
     #quiz button, #ask {
 
@@ -175,5 +181,3 @@ main {
 
         padding: 6px;
     }
-
-}
