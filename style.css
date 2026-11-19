@@ -3,6 +3,29 @@ body {
     margin: 20px;
 }
 
+/* navbar */
+nav {
+
+    display: flex;
+    gap: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid white;
+}
+
+nav a {
+
+    color: #3e8d3c;
+    text-decoration: none;
+}
+
+nav a:first-child {
+
+    margin-right: auto;
+    font-weight: bold;
+}
+
+
+/* career tree */
 #tree li {
 
     color: #6d7581;
@@ -24,7 +47,17 @@ main {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+
+    padding-bottom: 30px;
+    border-bottom: 1px solid white;
 }
+
+/* space under quiz */
+#quiz {
+
+    margin-bottom: 24px;
+}
+
 
 #tree {
 
@@ -39,6 +72,25 @@ main {
 #tree span, #results li {
 
     cursor: pointer;
+}
+
+/* result (search)  */
+#results {
+
+    list-style: none;
+    padding: 0;
+}
+
+#results li {
+
+    color: #3e8d3c;
+    padding: 4px 0;
+}
+
+/* qn */
+#question {
+
+    width: 250px;
 }
 
 /* box */
