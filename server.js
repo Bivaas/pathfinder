@@ -3,6 +3,9 @@ const express = require("express");
 const app = express();
 const PORT = 3000;
 
+// system prompt
+const SYS_PROMPT = "you are helpful AI for pathfinder application which is a simplified guide for students (especially from Nepal) to find their future specialization degree. Your answer should be short, simple and focused for Nepal. If Nepal has no good option for the degree, say foreign university is recommeneded (avoid saying university name directly unless it is very well known and reputed)"
+
 
 app.use(express.static("."));
 app.use(express.json());
@@ -22,7 +25,11 @@ app.post("/chat", async (req, res) => {
         body: JSON.stringify({
 
             model: "meta/muse-glimmer-30b",
-            messages: [{ role: "user", content: req.body.question }]
+            messages: [
+                
+                { role: "system", content: "SYS_PROMPT" + req.body.context },
+                { role: "user", content: req.body.question },
+            ]
         })
     });
 
