@@ -144,7 +144,7 @@ main {
         border-top: 0;
     }
 
-    #quiz button {
+    #quiz button, #ask {
 
         margin: 4px;
         padding: 8px 12px;
@@ -159,6 +159,21 @@ main {
         border-radius: 6px;
         color: #56ce54;
         text-decoration: none;
+    }
+
+    /* AI response */
+    #answer {
+
+        max-width: 600px;
+        white-space: pre-wrap;
+        border-left: 3px solid #3e8d3c;
+        padding-left: 10px;
+    }
+
+    /* filters and qn box */
+    #stream, #search, #question {
+
+        padding: 6px;
     }
 
 }

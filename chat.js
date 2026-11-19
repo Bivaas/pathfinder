@@ -19,4 +19,13 @@ document.getElementById("asl").addEventListener("click", () => {
 
         answer.textContent = data.answer;
     })
+
+    // enter key for send
+    document.getElementById("question").addEventListener("keydown", event => {
+
+        if (event.key === "Enter") {
+
+            document.getElementById("ask").click();
+        }
+    })
 })
