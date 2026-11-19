@@ -226,7 +226,7 @@ main {
     }
 
     /* AI response */
-    #answer {
+    #answer, #aiPick {
 
         max-width: 600px;
         white-space: pre-wrap;

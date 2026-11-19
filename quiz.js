@@ -63,6 +63,8 @@ let scores = {
     Humanities: 0
 }
 
+let answers = [];
+
 
 //  one question and answer
  function showQuestion(index) {
@@ -79,9 +81,11 @@ let scores = {
         
         button.addEventListener("click", () => {
 
+            scores[option.field] = scores[option.field] + 1;
+            answers.push(question.text + " " + option.text );
+
             if (index + 1 < questions.length) {
 
-                scores[option.field] = scores[option.field] + 1;
 
                 showQuestion(index + 1);
 
@@ -118,6 +122,8 @@ function showAbout() {
 // answers to fields
 function showResult() {
 
+    const about = document.getElementById("about").value;
+
     let best = "Software";
 
     for (const field in scores) {
@@ -128,9 +134,44 @@ function showResult() {
         }
     }
 
-    document.getElementById("quiz").innerHTML = "<p>Your best career match is: " + best + "</p>";
+    showPick(best, "asking AI for personal pick....");
 
-    document.getElementById("quiz").innerHTML += "<a href='index.html?field=" + best + "'>See " + best + " in the career map</a>";
+    fetch("/quiz", {
+
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify ({ answers: answers, about: about })
+    })
+
+        .then(response => response.json())
+        .then(data => {
+
+            if (data.error) {
+                showPick(best, "");
+                Toastify({ text: data.error, style: { background: "#b00020" }}).showToast();
+            }
+
+            else {
+
+                showPick(data.field || best, data.reasons);
+            }
+        })
+
+        .catch(() => {
+
+            showPick(best, "");
+            Toastify ({ text: "Something went wrong...", style: {background: "#b0020" } }).showToast();
+        })
+}
+
+// AI field display
+function showPick(field, reasons) {
+
+    const quiz = document.getElementById("quiz");
+    quiz.innerHTML = "<p>your best match: " + field + "</p><p id='aiPick'></p>";
+
+    document.getElementById("aiPick").textContent = reasons;
+    quiz.innerHTML += "<a href='index.html?field=" + field + "'>See " + field + " in the career map </a>";
 }
 
 showQuestion(0);
