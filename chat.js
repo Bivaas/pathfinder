@@ -1,11 +1,20 @@
-document.getElementById("asl").addEventListener("click", () => {
+const askButton = document.getElementById("ask");
+const questionBox = document.getElementById("question");
 
-    const question = document.getElementById("question").value;
+askButton.addEventListener("click", () => {
+
+    const question = questionBox.value.trim();
     const answer = document.getElementById("answer");
     const context = document.getElementById("details").innerText;
 
-    answer.textContent = "thinking.......";
+    if (!question) {
 
+        Toastify({ text: "Type a question first", style: { background: "#b00020" }}).showToast();
+        return;
+    }
+
+    answer.textContent = "thinking.......";
+    askButton.disabled = true;
 
     fetch("/chat", {
 
@@ -22,20 +31,11 @@ document.getElementById("asl").addEventListener("click", () => {
             answer.textContent = "";
 
             Toastify({ text: data.error, style: { background: "#b00020" }}).showToast();
-        
+
         }
         else {
 
             answer.textContent = data.answer;
-        }
-    })
-
-    // enter key for send
-    document.getElementById("question").addEventListener("keydown", event => {
-
-        if (event.key === "Enter") {
-
-            document.getElementById("ask").click();
         }
     })
 
@@ -45,4 +45,18 @@ document.getElementById("asl").addEventListener("click", () => {
 
         Toastify ({ text: "Something went wrong..", style: {background: "#b00020"} }).showToast();
     })
+
+    .finally(() => {
+
+        askButton.disabled = false;
+    })
+})
+
+// enter key for send
+questionBox.addEventListener("keydown", event => {
+
+    if (event.key === "Enter" && !askButton.disabled) {
+
+        askButton.click();
+    }
 })

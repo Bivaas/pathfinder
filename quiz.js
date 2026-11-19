@@ -104,7 +104,7 @@ let answers = [];
 function showAbout() {
 
     const quiz = document.getElementById("quiz");
-    quiz.innerHTML = "<<p>Describe yourself (hobbies, academics, dream job) </p>";
+    quiz.innerHTML = "<p>Describe yourself (hobbies, academics, dream job) </p>";
 
     const box = document.createElement("textarea");
     box.id = "about";
@@ -160,7 +160,7 @@ function showResult() {
         .catch(() => {
 
             showPick(best, "");
-            Toastify ({ text: "Something went wrong...", style: {background: "#b0020" } }).showToast();
+            Toastify ({ text: "Something went wrong...", style: {background: "#b00020" } }).showToast();
         })
 }
 
