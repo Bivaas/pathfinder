@@ -1,5 +1,5 @@
 const express = require("express");
-const careers = require("./careers.json");
+const careers = require("./public/careers.json");
 
 const app = express();
 const PORT = 3000;
@@ -19,7 +19,7 @@ const FIELD_LIST = careers.children.map(field =>
 ).join("\n");
 
 
-app.use(express.static("."));
+app.use(express.static("public"));
 app.use(express.json());
 
 // sends messages to NVIDIA and returns the reply text (throws a readable error message)
