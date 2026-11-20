@@ -1,8 +1,12 @@
+const path = require("path");
 const express = require("express");
 const careers = require("./public/careers.json");
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
+
+// absolute path so it works no matter which folder the server starts from (Vercel runs it elsewhere)
+const PUBLIC_DIR = path.join(__dirname, "public");
 
 // fast model with thinking turned off (muse-glimmer took 50-120s per answer)
 const MODEL = "nvidia/nemotron-3.5-lightning-30b-a3b";
@@ -19,7 +23,7 @@ const FIELD_LIST = careers.children.map(field =>
 ).join("\n");
 
 
-app.use(express.static("public"));
+app.use(express.static(PUBLIC_DIR));
 app.use(express.json());
 
 // sends messages to NVIDIA and returns the reply text (throws a readable error message)
@@ -132,6 +136,12 @@ app.post("/quiz", async (req, res) => {
 })
 
 
-app.listen(PORT, () => {
-    console.log("running at http://localhost:" + PORT);
-});
+// locally: start the server. On Vercel: just export the app, Vercel runs it.
+if (require.main === module) {
+
+    app.listen(PORT, () => {
+        console.log("running at http://localhost:" + PORT);
+    });
+}
+
+module.exports = app;
