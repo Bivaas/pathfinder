@@ -115,6 +115,15 @@ main {
     background: white;
 }
 
+/* After +2 btn */
+#tree > ul > li > span, #tree > ul > li.open > span {
+
+    font-size: 23px;
+    font-weight: bold;
+    padding: 5px 10px;
+    color: black;
+}
+
 /* pic */
 #tree span img {
 
@@ -239,3 +248,5 @@ main {
 
         padding: 6px;
     }
+
+

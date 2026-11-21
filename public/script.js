@@ -1,6 +1,34 @@
 let streamLabels = {};
 let allNodes = [];
+let careerData;
+let chosen = "all";
 
+
+// degrees open to chosen faculty
+function fits(node) {
+
+    if (node.streams) 
+    
+        return chosen === "all" || node.streams.includes(chosen);
+
+    if (node.type === "faculty")
+
+        return node.children.some(fits);
+
+    return true;
+}
+
+// tree line again
+function drawTree() {
+
+    allNodes = [];
+    const tree = document.getElementById("tree");
+    tree.innerHTML = "";
+
+    const ul = document.createElement("ul");
+    ul.appendChild(buildList(careerData));
+    tree.appendChild(ul);
+}
 
 // all details (click)
 function showDetails(node) {
@@ -51,11 +79,6 @@ function buildList(node) {
     // show details
     li.appendChild(label);
 
-    // degree with their streams
-    if (node.streams) {
-
-        li.dataset.streams = node.streams.join(" ");
-    }
 
     label.addEventListener("click", () => showDetails(node));
 
@@ -63,7 +86,7 @@ function buildList(node) {
 
         const ul = document.createElement("ul");
         ul.hidden = true;
-        node.children.forEach(child => {
+        node.children.filter(fits).forEach(child => {
 
             ul.appendChild(buildList(child));
         });
@@ -112,10 +135,8 @@ fetch("careers.json")
             document.getElementById("stream").innerHTML += "<option value='" + code + "'>" + streamLabels[code] + "</option>";
         }
 
-        const ul = document.createElement("ul");
-        ul.appendChild(buildList(data));
-
-        document.getElementById("tree").appendChild(ul);
+        careerData = data;
+        drawTree();
 
         // open address field
         const field = new URLSearchParams(location.search).get("field");
@@ -139,12 +160,9 @@ fetch("careers.json")
     // degree and stream changes
     document.getElementById("stream").addEventListener("change", event => {
 
-        const chosen = event.target.value;
+        chosen = event.target.value;
+        drawTree();
 
-        document.querySelectorAll("[data-streams]").forEach(li => {
-
-            li.hidden = chosen !== "all" && !li.dataset.streams.includes(chosen);
-        });
     })
 
     // student types
